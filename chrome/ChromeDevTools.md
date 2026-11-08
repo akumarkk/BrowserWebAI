@@ -1,5 +1,8 @@
-##### Architecture Overview
+# Chrome DevTools MCP
 
+## Architecture Overview
+
+```text
 +--------------------+       JSON-RPC (MCP)      +------------------------+
 |   MCP Client /     | ------------------------> |   Chrome DevTools      |
 |    AI Assistant    | <------------------------ |   MCP Server (Daemon)  |
@@ -12,10 +15,11 @@
                                                  |     Google Chrome      |
                                                  |   (Browser Instance)   |
                                                  +------------------------+
+```
 
+## Process Architecture Diagram
 
-
-##### Process Architecture Diagram
+```text
 +-----------------------------------------------------------+
 |                   CLI / MCP Client                        |
 |   (Terminal, Claude Code, Cursor, Gemini CLI, etc.)       |
@@ -39,3 +43,4 @@
 |  - Render & Network Processes                             |
 |  - GPU & Utility Sub-processes                            |
 +-----------------------------------------------------------+
+```
